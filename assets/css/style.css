@@ -13,6 +13,7 @@
 header {
     height: 100vh;
     nav {
+
         width: 100%;
         padding: 44px 120px;
         display: flex;
@@ -25,7 +26,7 @@ header {
         
 
 
-        h1{
+        p{
              font-weight: 400;
              font-size: 28px;
              letter-spacing: 10%;
@@ -51,29 +52,35 @@ header {
         justify-content: center;
         align-items: center; 
         position: relative;
-        overflow: hidden;
-         
-       
+    
+
+    
+
        
         h1 {
             max-width: 1200px;
-           /*  max-height: 300px; */
-            margin: 200px  50px 0px;
+            margin: 200px 120px 0px;
             font-family: Gilda Display;
             font-weight: 400;
             font-size: 170px;
             line-height: 170px;
             text-align: center;
+            letter-spacing: 0%;
+            color: #262626;
+   
+
        
-            span{
-                color:#25A59E
+          span{
+                color:#25A59E;
+                font-family: Gilda Display;
+    
              }
            
          
 
         }
 
-          .circle-image {
+     .circle-image {
         
        margin: 0 auto;
        max-width: 600px;
@@ -127,8 +134,7 @@ header {
 
        
    .container-hero {
-            max-width: 1200px;
-            
+            max-width: 1200px; 
             margin: 0 120px;
             padding: 40px 60px;
             display: flex;
@@ -177,11 +183,11 @@ header {
 }
 
 .destinations {
-    margin: 0 auto;
-    
-    display: flex;
+   margin: 0 auto; 
+   display: flex;
    flex-direction: column;
    align-items: center;
+   justify-content: space-between;
 
   .dest-title {
     margin: 100px 120px 60px;
@@ -217,7 +223,7 @@ header {
 
         .search{
             max-width:470px ;
-            max-height: 64px;
+            max-height: 64px; 
             background-color: #FAFAFA;
             display: flex;
             justify-content: space-between;
@@ -268,15 +274,15 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-   /*  align-content: space-between; */
-   /*  gap: 28px; */
     flex-wrap: wrap;
+
     
      
 
     .box{
         margin-bottom: 28px;
         max-width: 370px;
+        max-height: 404px;
         padding: 16px 16px 36px;
         background-color: #FFFFFF;
         border: 1px solid #F2F2F2;
@@ -359,12 +365,25 @@ header {
         justify-content: space-between;
        
         gap: 28px;
+      
 
         .card{
             width: 100%;
             padding: 40px 32px 48px;
             box-shadow: 10px 26px 150px 0px #4343641A;
             position: relative;
+            transition: 0.3s 0s all;
+            &:hover{
+                
+                background-color: #25A59E;
+                border-top: 4px solid #FFFFFF;
+                color: #FFFFFF;
+                 
+                p.para-card , button {
+                    color: #FFFFFF;
+                }
+
+            }
 
             h2{
                 font-family: Gilda Display;
@@ -426,6 +445,16 @@ header {
              p.para-card , button {
                 color: #FFFFFF;
              }
+             &:hover{
+                background-color: #FFFFFF;
+                color: black;
+                 p {
+                    color: #737373;
+                 }
+                 button p {
+                    color: #25A59E;
+                 }
+             }
         }
        
     }
@@ -435,9 +464,8 @@ header {
 }
 .see-more {
 
-   /*  .container-see { */
+  
         margin: 100px 120px ;
-       /*   max-width: 1200px; */
         display: flex;
         justify-content: center;
         align-items: center;
@@ -469,8 +497,7 @@ header {
 
                 }
                 button{
-           /*          max-width: 288px;
-                    max-height: 54px; */
+          
                     padding:16px 32px;
                     border: none;
                     cursor: pointer;
@@ -534,16 +561,18 @@ header {
     }
 }
 .offer {
-
+     margin: 0 auto;
     border-bottom: 1px solid #D9D9D9;
    .container-offer{
     margin: 48px 120px;
     display: flex;
-    justify-content: center;
-    align-items: start;
+    justify-content:space-between;
+    align-items: center;
+    gap: 200px;
 
     h1{
-          max-width: 743px;
+        
+        max-width: 743px;
         font-family: Gilda Display;
         font-weight: 400;
         font-size: 72px;
@@ -551,7 +580,7 @@ header {
         letter-spacing: 0%;
         text-align: center;
         color: #262626;
-        margin-right: 300px;
+       
 
     }
     button{
@@ -580,7 +609,7 @@ footer{
         margin: 80px 120px 100px;
        
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         .contact {
             h1{
@@ -691,6 +720,7 @@ footer{
         }
         }
         .hero {
+                 overflow: hidden;
             h1{
                  margin: 150px 24px 0px;
                 line-height: 100%;
@@ -972,6 +1002,7 @@ footer{
             margin: 40px 20px;
             flex-direction: column;
             align-items: center;
+            gap: 0;
          
 
 
@@ -1033,18 +1064,3 @@ footer{
     }
 
     
-
-
-/* @media screen and (min-width: 992px) {
-     .hero {
-            h1{
-   
-                margin: 150px 24px 0px;
-                line-height: 100%;
-                font-size: 52px;
-            
-
-            }
-}
-
-}  */
