@@ -89,6 +89,8 @@ header {
         position: relative;
         border: 1px solid #EE8F39;
         border-radius: 600px 600px 0 0;
+       
+      
 
           
          
@@ -721,31 +723,35 @@ footer{
         }
         .hero {
                  overflow: hidden;
+                 position: relative;
             h1{
                  margin: 150px 24px 0px;
                 line-height: 100%;
                 font-size: 52px;               
                 letter-spacing: 0%;
+                top: -50px;
+                position: absolute;
  
 
  
             }
             .circle-image {
-           width: 100%; 
+      
+              position: absolute;
               
-               
-            
+               margin: 0 auto;
+   
+                
                 .orange{
-                    max-width:100%;
-                   /*  max-height: 100%; */
-                 
-         
+              
+                 left:0px;
+                
                     
                 }
                 img{
                 
                    min-width:370px;
-                    top: 40px;
+                    top: 10px;
                     left: 0;
 
                 }
@@ -761,10 +767,10 @@ footer{
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
-            position: relative;
+            position: absolute;
             gap: 16px;
             text-align: center;
-            top: -5%;
+            top: 65%;
              font-family: Urbanist;
  
              p {
